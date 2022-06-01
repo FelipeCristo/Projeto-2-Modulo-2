@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   height: 100vh;
+   width: 100vw;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items:center ;
+    height: 2rem;
+    background-color: red;
+
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover{
+    color: rgb(255, 204, 0);
+    transform: scale(1.1);
+}
+
+
+
+header img#logo{
+    height: 4rem;
+}
+
+header ul{
+    list-style:none;
+    display: flex;
+    gap: 16px  ;
+    
+}
+
+
+main{
+    min-height: 80%;
+    padding: 10px ;
+}
+
+section#detalhes{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table{
+    width: 1000px;
+    text-align: center;
+}
+
+table td{
+    border: 1px solid red;
+}
+
+table tr:nth-child(odd){
+    background-color: red;
+    color: white;
+}
+
+table thead td{
+    background-color: white;
+    color: red;
+}
+
+
+
+section#pokemom{
+    display: flex;
+    flex-wrap: wrap ;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+article.card{
+    height: 300px;
+    width: 203px;
+   padding: 0,5rem;
+  box-shadow: 5px 5px 5px 5px #00000020;
+  transition: 0.5s ease-in-out;
+
+}
+
+article.card:hover{
+  border: solid 5px rgb(218, 23, 23)
+}
+
+article.card img{
+    height: 100%;
+}
+
+article.card div.card_image{
+    height: 10rem;
+    width: 10rem;
+    padding: 1rem;
+
+
+}
+
+
+
+article.card div.descricao__do__pokemom{
+    display: flex;
+    flex-direction: column;
+    height: 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    background-color: red;
+    height: 10%;
+    color: white;
+  
+}
+
+
+
+section#message {
+    padding: 1.5rem;
+    background-color: rgb(255, 83, 83);
+    color: #ffffff;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  span#close {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+  }
+  
+  span#close:hover{
+    color: rgb(255, 0, 0);
+    transform: scale(1.5);
+  }
+
+  /* cadastro */
+
+  section#register {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+}
+  
+  section#register img {
+    width: 100%;
+  }
+  
+  section#register h2 {
+    width:100%;
+    text-align: center;
+    padding-bottom:2rem;
+    color: rgb(109, 109, 109);
+  }
+  
+  section#register form {
+    width:50%;
+    display: flex;
+    flex-direction: column;    
+  }
+  
+  section#register form input {
+    width: 96.6%;
+    padding: 0.7rem;
+    font-size: 1rem;
+    outline: none;
+    /* border: solid 2px rgb(197, 197, 197); */
+  }
+  
+  section#register form label {
+    margin: 1rem 0 0 0;
+    /* color: rgb(148, 148, 148); */
+    align-self: flex-start;
+  }
+  
+  section#register form button {
+    padding: 0.6rem;
+    min-width: 5rem;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 1rem;
+    font-size: 1rem;
+    background-color: #fff;
+    border: solid 1px rgb(109, 109, 109);
+    border-radius: 1rem;
+    /* color: rgb(109, 109, 109); */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  section#register form button:hover {
+    background-color: brown;
+    color: #fff;
+    transform: scale(1.1);
+  }
+
