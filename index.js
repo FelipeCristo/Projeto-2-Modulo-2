@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 import express from "express";
 import path from "path";
 
@@ -10,7 +12,7 @@ app.use(express.json()); // converter para JSON
 
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
-const port = 3001;
+const port = process.env.PORT || 3001;
 app.listen(port, () => {
   console.log(`Rodando na porta ${port}`);
 });
