@@ -1,18 +1,23 @@
-require('dotenv').config();
+require("dotenv").config();
 
-import express from "express";
-import path from "path";
+// import express from "express";
+// import path from "path";
 
-const __dirname = path.resolve(path.dirname(""));
-
-
+const express = require('express');
+const path = require('path');
 const app = express();
+
+
+
+
+
+
 app.use(express.urlencoded({extended: true})); // O corpo (body) da requisição
 app.use(express.json()); // converter para JSON
 
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Rodando na porta ${port}`);
 });
